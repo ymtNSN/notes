@@ -62,4 +62,25 @@ git clone : 克隆
 
 git pull : 远程拉取代码
 
+### 比较差异
+
+git diff master oringin/master : 比较远程主分支和我的主分支之间的变化
+
+### git push origin master
+
+origin指定了你要push到哪个remote
+
+master其实是一个“refspec”，正常的“refspec”的形式为”+<src>:<dst>”，冒号前表示local branch的名字，冒号后表示remote repository下 branch的名字。注意，如果你省略了<dst>，git就认为你想push到remote repository下和local branch相同名字的branch。听起来有点拗口，再解释下，push是怎么个push法，就是把本地branch指向的commit push到remote repository下的branch，比如
+
+$git push origin master:master (在local repository中找到名字为master的branch，使用它去更新remote repository下名字为master的branch，如果remote repository下不存在名字是master的branch，那么新建一个)
+
+$git push origin master （省略了<dst>，等价于“git push origin master:master”）
+
+$git push origin master:refs/for/mybranch (在local repository中找到名字为master的branch，用他去更新remote repository下面名字为mybranch的branch)
+
+$git push origin HEAD:refs/for/mybranch （HEAD指向当前工作的branch，master不一定指向当前工作的branch，所以我觉得用HEAD还比master好些）
+
+$git push origin :mybranch （再origin repository里面查找mybranch，删除它。用一个空的去更新它，就相当于删除了）
+
+
 https://www.processon.com/view/link/5fdee6325653bb351c808581
