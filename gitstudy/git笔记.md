@@ -64,7 +64,7 @@ git pull : 远程拉取代码
 
 ### 比较差异
 
-git diff master oringin/master : 比较远程主分支和我的主分支之间的变化
+git diff master origin/master : 比较远程主分支和我的主分支之间的变化
 
 ### git push origin master
 
