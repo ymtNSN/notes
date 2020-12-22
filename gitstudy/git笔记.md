@@ -4,6 +4,11 @@ git add . : 所有文件添加到暂存区
 
 git commit ：提交到提交区
 
+git commit -m 用于提交暂存区的文件；git commit -am 用于提交跟踪过的文件
+使用git commit -am 可以省略git add . 这一步，因为git commit -am 可以提交跟踪过的文件
+
+git add命令是个多功能命令，根据目标文件的状态不同，此命令的效果也不同：可以用它开始跟踪新的文件,或者把已跟踪的文件放到暂存区，还可以用于合并时把有冲突的文件标记为已解决状态等
+
 git log : 日志
 git log --pretty=oneline：日志简化
 
