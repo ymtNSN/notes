@@ -48,8 +48,6 @@ git tag -d v1 : 删除标签
 
 .gitignore : 忽略文件
 
-
-
 ### 远程仓库
 
 git remote : 查看远程仓库
