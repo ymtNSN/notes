@@ -53,6 +53,8 @@ git tag -d v1 : 删除标签
 
 git remote : 查看远程仓库
 
+git remote -v : 远程仓库地址
+
 git remote add origin git@github.com:ymtNSN/test.git
 origin : 本地仓库和远程仓库地址进行一个关联
 
