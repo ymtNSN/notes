@@ -1,4 +1,5 @@
 git status ：查看状态
+git init： 初始化
 git add ：添加到暂存区
 git add . : 所有文件添加到暂存区
 
