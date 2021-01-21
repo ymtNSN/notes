@@ -1,6 +1,6 @@
 # DDD
 # 事件驱动
 # ThreadLocal
-# jvmm
+# jvm
 # 跳跃表
 # 贪心算法
